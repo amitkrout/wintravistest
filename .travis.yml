@@ -5,9 +5,7 @@ before_install:
 - git config --system core.longpaths true
 
 install:
-- https://github.com/amitkrout/wintravistest.git amitkrout/wintravistest
-- cd amitkrout/wintravistest
-- git checkout -qf $TRAVIS_COMMIT
+- git config --system core.longpaths true
 
 jobs:
   include:
