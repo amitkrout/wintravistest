@@ -1,2 +1,13 @@
 language: go
 os: windows
+jobs:
+  include:
+    # YAML alias, for settings shared across the tests
+    - &base-test
+      stage: test
+      go_import_path: github.com/openshift/odo
+      go: "1.11.2"
+      install:
+        - make goget-tools
+      script:
+        - make bin
