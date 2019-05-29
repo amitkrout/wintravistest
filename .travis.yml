@@ -4,6 +4,11 @@ os: windows
 before_install:
 - git config --system core.longpaths true
 
+install:
+- https://github.com/amitkrout/wintravistest.git amitkrout/wintravistest
+- cd amitkrout/wintravistest
+- git checkout -qf $TRAVIS_COMMIT
+
 jobs:
   include:
     # YAML alias, for settings shared across the tests
