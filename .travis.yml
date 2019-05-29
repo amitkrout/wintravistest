@@ -5,7 +5,7 @@ jobs:
     # YAML alias, for settings shared across the tests
     - &base-test
       stage: test
-      go_import_path: github.com/openshift/odo
+      go_import_path: github.com/amitkrout/wintravistest
       go: "1.11.2"
       install:
         - make goget-tools
