@@ -2,14 +2,9 @@ dist: trusty
 os: windows
 language: go
 
-before_script:
-- git config --system core.longpaths true
-
 before_install:
 - git config --system core.longpaths true
-
-install:
-- git config --system core.longpaths true
+- git clone --depth=50 --branch=master https://github.com/amitkrout/wintravistest.git amitkrout/wintravistest
 
 jobs:
   include:
