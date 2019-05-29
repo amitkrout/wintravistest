@@ -1,5 +1,9 @@
 language: go
 os: windows
+
+before_script:
+- git config --system core.longpaths true
+
 jobs:
   include:
     # YAML alias, for settings shared across the tests
