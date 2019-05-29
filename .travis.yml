@@ -2,6 +2,9 @@ dist: trusty
 os: windows
 language: go
 
+before_script:
+- git config --system core.longpaths true
+
 before_install:
 - git config --system core.longpaths true
 
