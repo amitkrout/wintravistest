@@ -1,7 +1,7 @@
 language: go
 os: windows
 
-before_script:
+before_install:
 - git config --system core.longpaths true
 
 jobs:
