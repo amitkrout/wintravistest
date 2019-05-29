@@ -1,5 +1,6 @@
-language: go
+dist: trusty
 os: windows
+language: go
 
 before_install:
 - git config --system core.longpaths true
@@ -9,7 +10,6 @@ install:
 
 jobs:
   include:
-    # YAML alias, for settings shared across the tests
     - &base-test
       stage: test
       go_import_path: github.com/amitkrout/wintravistest
