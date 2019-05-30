@@ -7,6 +7,8 @@ before_script:
 
 before_install:
 - git config --system core.longpaths true
+- rd /s amitkrout/wintravistest
+- git clone --depth=50 --branch=master https://github.com/amitkrout/wintravistest.git amitkrout/wintravistest
 
 install:
 - git config --system core.longpaths true
