@@ -8,3 +8,6 @@ coverage:
       default: off
     patch:
       default: off
+codecov:
+  token: a1e60260-1fd0-41e6-bf05-584fe52bd5f4
+
